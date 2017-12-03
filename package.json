@@ -5,6 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "test": "mocha tests/**/*.spec.js",
+    "test:tdd": "mocha tests/**/*.spec.js --watch",
     "build": "webpack --colors --progress",
     "watch": "npm run build -- --watch",
     "server": "webpack-dev-server --inline --open",
