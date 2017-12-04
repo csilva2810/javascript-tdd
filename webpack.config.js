@@ -1,6 +1,6 @@
-var webpack = require('webpack')
-var path = require('path')
-var nodeENV = process.env.NODE_ENV || 'production'
+const webpack = require('webpack');
+const path = require('path');
+const nodeENV = process.env.NODE_ENV || 'production';
 
 module.exports = {
   devtool: 'source-map',
@@ -20,7 +20,7 @@ module.exports = {
         exclude: /node_modules/,
         loader: 'babel-loader',
         options: {
-          presets: ['env']
+          presets: ['es2015']
         }
       }
     ]

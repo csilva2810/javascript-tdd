@@ -4,8 +4,8 @@
   "description": "TDD with Javascript",
   "main": "src/index.js",
   "scripts": {
-    "test": "mocha tests/**/*.spec.js",
-    "test:tdd": "mocha tests/**/*.spec.js --watch",
+    "test": "mocha tests/**/*.spec.js --require babel-register",
+    "test:tdd": "mocha tests/**/*.spec.js --require babel-register --watch",
     "build": "webpack --colors --progress",
     "watch": "npm run build -- --watch",
     "server": "webpack-dev-server --inline --open",
@@ -17,7 +17,8 @@
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
-    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.26.0",
     "chai": "^4.1.2",
     "eslint": "^4.12.1",
     "eslint-config-airbnb-base": "^12.1.0",
