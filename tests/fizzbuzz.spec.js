@@ -39,6 +39,10 @@ describe('FizzBuzz', () => {
     it('should return the same number when receive a number not divisible of 3 and 5', () => {
       expect(fizzBuzz(8)).to.be.equal(8);
     });
+
+    it('should return 0 when receive 0', () => {
+      expect(fizzBuzz(0)).to.be.equal(0);
+    });
   });
 
 });
