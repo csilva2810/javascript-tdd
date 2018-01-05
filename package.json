@@ -1,5 +1,5 @@
 {
-  "name": "javascript-tdd-course",
+  "name": "spotify-wrapper",
   "version": "1.0.0",
   "description": "TDD with Javascript",
   "main": "src/index.js",
